@@ -10,6 +10,7 @@
   --navigation-list-color: #212121;
   --accent-color: #2196f3;
   --contact-link-color: #757575;
+  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 html {
   box-sizing: border-box;
@@ -83,11 +84,14 @@ html {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition: 250ms var(--time-function);
 }
 .navigation-link:visited {
   color: var(--navigation-list-color);
 }
 .active-blue-link {
+  position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -103,8 +107,10 @@ html {
 .active-blue-link:hover {
   color: var(--accent-color);
 }
-/* .active-blue-link::after {
+.active-blue-link::after {
   content: "";
+  position: absolute;
+  bottom: 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -112,7 +118,7 @@ html {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
-} */
+}
 .contact-data {
   display: flex;
   margin-left: auto;
@@ -129,6 +135,8 @@ html {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition: 250ms var(--time-function);
 }
 .contact-data .contact-link,
 .contact-link:visited {
@@ -162,7 +170,7 @@ html {
   padding-left: 15px;
   padding-right: 15px;
   align-items: center;
-  border-bottom: 1px solid #ececec;
+  /* border-bottom: 1px solid #ececec; */
 }
 .hero-section {
   height: 600px;
@@ -375,6 +383,8 @@ html {
   margin-bottom: 24px;
   border-radius: 50%;
   fill: #afb1b8;
+
+  transition: 250ms var(--time-function);
 }
 .team-social-link .icon {
   width: 20px;
@@ -431,6 +441,8 @@ html {
   border-radius: 4px;
 
   fill: #afb1b8;
+
+  transition: 250ms var(--time-function);
 }
 .regular-customers-link:hover,
 .regular-customers-link:focus {
@@ -519,6 +531,8 @@ html {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
+
+  transition: 250ms var(--time-function);
 }
 .footer-social-link-list .link:hover,
 .footer-social-link-list .link:focus {
@@ -584,6 +598,10 @@ html {
 }
 
 /* Стили портфолио */
+.portfolio-main-container {
+  border-top: 1px solid #ececec;
+}
+
 .sorting-buttons-container {
   width: 1200px;
   margin: 0 auto;
@@ -614,6 +632,8 @@ html {
   line-height: 1.75;
   letter-spacing: 0.03em;
   color: var(--title-light-theme-color);
+
+  transition: 250ms var(--time-function);
 }
 .sorting-button:focus,
 .sorting-button:hover {
@@ -682,6 +702,8 @@ html {
   color: #ffffff;
 
   background-color: rgba(33, 150, 243, 0.9);
+
+  transition: 250ms var(--time-function);
 }
 .work-examples-description-container {
   position: relative;
@@ -726,5 +748,5 @@ html {
 }
 .work-examples-link:hover .work-examples-description,
 .work-examples-link:focus .work-examples-description {
-  top: 0;
+  transform: translateY(-100%);
 }
