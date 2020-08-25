@@ -399,7 +399,7 @@ html {
 }
 .user-comment:focus + .user-comment-label,
 .user-comment:not(:placeholder-shown) + .user-comment-label {
-  transform: translate(-26px, -33px);
+  transform: translateY(-33px);
   transition: 250ms var(--time-function);
 
   font-weight: normal;
