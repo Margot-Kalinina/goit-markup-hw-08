@@ -57,9 +57,90 @@
           <h1 class="hero-section-header">
             Эффективные решения<br />для вашего бизнеса
           </h1>
-          <button type="button" class="hero-section-button">
+          <button data-modal-open type="button" class="hero-section-button">
             Заказать услугу
           </button>
+          <div data-modal class="backdrop">
+            <div class="modal">
+              <button data-modal-close class="close-modal-button">
+                <svg class="icon-close">
+                  <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+                </svg>
+              </button>
+              <strong class="modal-heder"
+                >Оставьте свои данные, мы вам перезвоним</strong
+              >
+              <form>
+                <div class="form-field">
+                  <input
+                    id="user-name"
+                    placeholder=" "
+                    type="text"
+                    class="modal-form-input"
+                    name="user-name"
+                  />
+                  <label for="user-name" class="form-label"> Имя</label>
+                  <svg class="icon-modal">
+                    <use
+                      href="./images/symbol-defs.svg#icon-person-modal"
+                    ></use>
+                  </svg>
+                </div>
+                <div class="form-field">
+                  <input
+                    id="user-phone"
+                    placeholder=" "
+                    type="tel"
+                    class="modal-form-input"
+                    name="user-phone"
+                  />
+                  <label for="user-phone" class="form-label">Телефон</label>
+                  <svg class="icon-modal">
+                    <use href="./images/symbol-defs.svg#icon-phone-modal"></use>
+                  </svg>
+                </div>
+                <div class="form-field">
+                  <input
+                    id="user-email"
+                    placeholder=" "
+                    type="email"
+                    class="modal-form-input"
+                    name="user-email"
+                  />
+                  <label for="user-email" class="form-label">Почта</label>
+                  <svg class="icon-modal">
+                    <use href="./images/symbol-defs.svg#icon-email-modal"></use>
+                  </svg>
+                </div>
+                <div class="form-field-comment">
+                  <textarea
+                    type="text"
+                    placeholder=" "
+                    class="user-comment"
+                    name="user-comment"
+                    id="user-comment"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                  <label for="user-comment" class="user-comment-label"
+                    >Комментарий</label
+                  >
+                </div>
+                <input
+                  type="checkbox"
+                  id="rules-agree"
+                  class="rules-agree-checkbox"
+                />
+                <label for="rules-agree" class="rules-agree-label" name="topic"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a class="rules-agree-link" href=""
+                    >Условия договора</a
+                  ></label
+                >
+                <button class="modal-button" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
         </section>
         <!--почему именно мы-->
         <section>
@@ -536,17 +617,23 @@
           </div>
           <div class="subscribe">
             <p>Подпишитесь на рассылку</p>
-            <div class="subscribe-container">
-              <span class="ghost"></span>
+            <form class="subscribe-container">
+              <input
+                class="subscribe-form"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
               <button type="submit" class="button-subscribe">
                 Подписаться<svg class="icon-send">
                   <use href="./images/symbol-defs.svg#icon-send"></use>
                 </svg>
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </footer>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
