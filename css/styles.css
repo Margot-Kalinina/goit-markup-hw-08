@@ -253,6 +253,7 @@ html {
   border-radius: 50%;
 }
 .backdrop {
+  opacity: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -261,14 +262,14 @@ html {
   z-index: 10;
 
   background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-}
-.backdrop {
+
   transition: 250ms var(--time-function);
 }
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
   transition: 250ms var(--time-function);
 }
 .modal {
