@@ -348,6 +348,8 @@ html {
   fill: #212121;
   width: 18px;
   height: 18px;
+
+  transition: 250ms var(--time-function);
 }
 .modal-form-input {
   display: block;
@@ -361,6 +363,8 @@ html {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+
+  transition: 250ms var(--time-function);
 }
 .user-comment {
   width: 100%;
@@ -381,6 +385,8 @@ html {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+
+  transition: 250ms var(--time-function);
 }
 .modal-form-input:focus + .form-label,
 .modal-form-input:not(:placeholder-shown) + .form-label {
@@ -396,10 +402,12 @@ html {
 }
 .modal-form-input:focus ~ .icon-modal {
   fill: #2196f3;
+  transition: 250ms var(--time-function);
 }
 .modal-form-input:focus,
 .user-comment:focus {
   border-color: #2196f3;
+  transition: 250ms var(--time-function);
 }
 .user-comment:focus + .user-comment-label,
 .user-comment:not(:placeholder-shown) + .user-comment-label {
