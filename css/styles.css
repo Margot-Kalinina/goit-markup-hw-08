@@ -397,6 +397,10 @@ html {
 .modal-form-input:focus ~ .icon-modal {
   fill: #2196f3;
 }
+.modal-form-input:focus,
+.user-comment:focus {
+  border-color: #2196f3;
+}
 .user-comment:focus + .user-comment-label,
 .user-comment:not(:placeholder-shown) + .user-comment-label {
   transform: translateY(-33px);
