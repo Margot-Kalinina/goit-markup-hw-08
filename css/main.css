@@ -236,6 +236,7 @@ html {
   height: 30px;
   margin: 0px;
   padding: 0px;
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
