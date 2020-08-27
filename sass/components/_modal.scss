@@ -5,19 +5,15 @@
 
   transition: $time-function;
 }
-.close-modal-button:hover .icon-close,
-.close-modal-button:hover .icon-close {
-  fill: $accent-color;
-  transition: $time-function;
-}
 .close-modal-button {
   position: absolute;
   right: 8px;
   top: 8px;
-  display: block;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 30px;
   height: 30px;
   margin: 0px;
@@ -26,6 +22,14 @@
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  outline: none;
+
+  &:hover {
+    .icon-close {
+      fill: $accent-color;
+      transition: $time-function;
+    }
+  }
 }
 .backdrop {
   opacity: 1;
@@ -40,7 +44,7 @@
 
   transition: $time-function;
 }
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -137,6 +141,25 @@
   border-radius: 4px;
 
   transition: $time-function;
+
+  &:focus + .form-label,
+  &:not(:placeholder-shown) + .form-label {
+    transform: translate(-26px, -40px);
+    transition: $time-function;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: $accent-color;
+  }
+
+  &:focus ~ .icon-modal {
+    fill: $accent-color;
+    border-color: $accent-color;
+    transition: $time-function;
+  }
 }
 .user-comment {
   width: 100%;
@@ -158,39 +181,24 @@
   border-radius: 4px;
 
   transition: $time-function;
-}
-.modal-form-input:focus + .form-label,
-.modal-form-input:not(:placeholder-shown) + .form-label {
-  transform: translate(-26px, -40px);
-  transition: $time-function;
 
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  &:focus + .user-comment-label,
+  &:not(:placeholder-shown) + .user-comment-label {
+    transform: translateY(-33px);
+    transition: $time-function;
 
-  color: $accent-color;
-}
-.modal-form-input:focus ~ .icon-modal {
-  fill: $accent-color;
-  transition: $time-function;
-}
-.modal-form-input:focus,
-.user-comment:focus {
-  border-color: $accent-color;
-  transition: $time-function;
-}
-.user-comment:focus + .user-comment-label,
-.user-comment:not(:placeholder-shown) + .user-comment-label {
-  transform: translateY(-33px);
-  transition: $time-function;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
 
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+    color: $accent-color;
 
-  color: $accent-color;
+    &:focus {
+      border-color: $accent-color;
+      transition: $time-function;
+    }
+  }
 }
 .rules-agree-checkbox {
   -webkit-appearance: none;
@@ -205,30 +213,31 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $text-light-theme-color;
+
+  &::before {
+    content: "";
+    display: inline-block;
+
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+
+    border: 2px solid #212121;
+    border-radius: 4px;
+
+    transition: $time-function;
+  }
+
+  &:checked ~ .rules-agree-label::before {
+    background-color: $accent-color;
+    background-image: url(../images/icon-check.svg);
+    background-size: cover;
+    fill: #ffffff;
+    border: none;
+
+    transition: $time-function;
+  }
 }
-.rules-agree-label::before {
-  content: "";
-  display: inline-block;
-
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
-
-  border: 2px solid #212121;
-  border-radius: 4px;
-
-  transition: $time-function;
-}
-.rules-agree-checkbox:checked ~ .rules-agree-label::before {
-  background-color: $accent-color;
-  background-image: url(../images/icon-check.svg);
-  background-size: cover;
-  fill: #ffffff;
-  border: none;
-
-  transition: $time-function;
-}
-
 .rules-agree-link {
   font-weight: 500;
   font-size: 14px;
