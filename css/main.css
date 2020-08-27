@@ -785,7 +785,7 @@ html {
 }
 
 .footer-social-link-list .link:hover, .footer-social-link-list .link:focus {
-  background-color: .footer-social-link-list .link:hover, .footer-social-link-list .link:focus accent-color;
+  background-color: #2196f3;
 }
 
 .footer-social-link-list .icon {
