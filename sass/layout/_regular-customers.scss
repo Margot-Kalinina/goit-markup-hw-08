@@ -1,0 +1,33 @@
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.regular-customers-link {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  fill: #afb1b8;
+
+  transition: $time-function;
+}
+.regular-customers-link:hover,
+.regular-customers-link:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  fill: #2196f3;
+}
+.regular-customers-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.regular-customers-list .item:not(:last-child) {
+  margin-right: 30px;
+}

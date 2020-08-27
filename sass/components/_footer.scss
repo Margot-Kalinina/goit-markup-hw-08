@@ -1,0 +1,133 @@
+.footer {
+  background-color: #2f303a;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-navigation {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-contact-data-container .logo {
+  margin: 0;
+  padding: 0;
+}
+.footer-contact-data-container {
+  margin-right: 69px;
+}
+.contact-data-list .contact-link {
+  display: inline;
+  padding: 0;
+}
+.google-maps-position-link {
+  display: block;
+  margin-top: 20px;
+  width: 231px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-dark-theme-color;
+}
+.contact-data-list .item:not(:first-child) {
+  margin-top: 9px;
+}
+.join-us {
+  padding-top: 12px;
+  margin-right: 94px;
+  align-content: center;
+}
+.footer p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-dark-theme-color;
+}
+.footer-social-link-list {
+  display: flex;
+  margin-top: 20px;
+}
+.footer-social-link-list .item {
+  display: block;
+}
+.footer-social-link-list .item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-link-list .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+
+  transition: $time-function;
+}
+.footer-social-link-list .link:hover,
+.footer-social-link-list .link:focus {
+  background-color: #2196f3;
+}
+.footer-social-link-list .icon {
+  width: 20px;
+  height: 20px;
+}
+.subscribe-container {
+  display: flex;
+  align-content: center;
+}
+.subscribe {
+  padding-top: 12px;
+}
+.subscribe-form {
+  display: block;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  margin-top: 20px;
+  padding-left: 16px;
+
+  background-color: transparent;
+  outline: none;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: $main-font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.button-subscribe {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin-top: 20px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
+
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  fill: $text-dark-theme-color;
+}
+.icon-send {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
