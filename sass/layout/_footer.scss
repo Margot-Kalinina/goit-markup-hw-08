@@ -79,7 +79,7 @@
 
     &:hover,
     &:focus {
-      background-color: accent-color;
+      background-color: &accent-color;
     }
   }
 
