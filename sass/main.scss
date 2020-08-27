@@ -1,8 +1,8 @@
 @import "./utils/variables";
 @import "./base/base";
-@import "./components/logo";
+@import "./layout/logo";
 
-@import "./components/navigation-line";
+@import "./layout/navigation-line";
 
 @import "./layout/hero-section";
 @import "./components/modal";
@@ -12,8 +12,8 @@
 @import "./layout/what-we-do";
 @import "./layout/our-team";
 @import "./layout/regular-customers";
-@import "./components/footer";
+@import "./layout/footer";
 
-@import "./components/portfolio-sorting-buttons";
+@import "./layout/portfolio-sorting-buttons";
 @import "./layout/work-examples";
 @import "./components/buttons";

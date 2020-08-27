@@ -19,9 +19,9 @@
 }
 .regular-customers-link:hover,
 .regular-customers-link:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid $accent-color;
   border-radius: 4px;
-  fill: #2196f3;
+  fill: $accent-color;
 }
 .regular-customers-list {
   display: flex;
