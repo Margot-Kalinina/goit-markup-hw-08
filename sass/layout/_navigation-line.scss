@@ -6,9 +6,10 @@
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: $navigation-list-color;
-}
-.navigation-list .item:not(:last-child) {
-  margin-right: 50px;
+
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 .navigation-link {
   display: block;
@@ -16,9 +17,15 @@
   padding-bottom: 32px;
 
   transition: $time-function;
-}
-.navigation-link:visited {
-  color: $navigation-list-color;
+
+  &:visited {
+    color: $navigation-list-color;
+  }
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
 }
 .active-blue-link {
   position: relative;
@@ -27,28 +34,25 @@
   padding-bottom: 32px;
 
   color: $accent-color;
+
+  :visited {
+    color: $accent-color;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
 }
-.active-blue-link:visited {
-  color: $accent-color;
-}
-.navigation-list .navigation-link:focus,
-.navigation-link:hover,
-.active-blue-link:focus,
-.active-blue-link:hover {
-  color: $accent-color;
-}
-.active-blue-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 4px;
-  background-color: $accent-color;
-  border-radius: 2px;
-}
+
 .contact-data {
   display: flex;
   margin-left: auto;
@@ -58,29 +62,34 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.contact-link {
-  display: block;
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
-  transition: $time-function;
+  .contact-link {
+    display: block;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $contact-link-color;
+    fill: $contact-link-color;
+
+    transition: $time-function;
+
+    &:visited {
+      color: $contact-link-color;
+      fill: $contact-link-color;
+    }
+    &:focus,
+    &:hover {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+
+  .contact-link + .contact-link {
+    margin-left: 30px;
+  }
 }
-.contact-data .contact-link,
-.contact-link:visited {
-  color: $contact-link-color;
-  fill: $contact-link-color;
-}
-.contact-data .contact-link + .contact-link {
-  margin-left: 30px;
-}
-.contact-link:focus,
-.contact-link:hover {
-  color: $accent-color;
-  fill: $accent-color;
-}
+
 .icon-envelope {
   margin-right: 10px;
   width: 16px;

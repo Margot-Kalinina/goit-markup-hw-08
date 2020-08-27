@@ -2,6 +2,16 @@
   background-color: #2f303a;
   margin-left: auto;
   margin-right: auto;
+
+  p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-dark-theme-color;
+  }
 }
 .footer-navigation {
   display: flex;
@@ -9,16 +19,23 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-contact-data-container .logo {
-  margin: 0;
-  padding: 0;
-}
 .footer-contact-data-container {
   margin-right: 69px;
+
+  .logo {
+    margin: 0;
+    padding: 0;
+  }
 }
-.contact-data-list .contact-link {
-  display: inline;
-  padding: 0;
+.contact-data-list {
+  .contact-link {
+    display: inline;
+    padding: 0;
+  }
+
+  .item:not(:first-child) {
+    margin-top: 9px;
+  }
 }
 .google-maps-position-link {
   display: block;
@@ -31,52 +48,45 @@
   letter-spacing: 0.03em;
   color: $text-dark-theme-color;
 }
-.contact-data-list .item:not(:first-child) {
-  margin-top: 9px;
-}
 .join-us {
   padding-top: 12px;
   margin-right: 94px;
   align-content: center;
 }
-.footer p {
-  margin: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $text-dark-theme-color;
-}
 .footer-social-link-list {
   display: flex;
   margin-top: 20px;
-}
-.footer-social-link-list .item {
-  display: block;
-}
-.footer-social-link-list .item:not(:last-child) {
-  margin-right: 10px;
-}
-.footer-social-link-list .link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: #ffffff;
 
-  transition: $time-function;
-}
-.footer-social-link-list .link:hover,
-.footer-social-link-list .link:focus {
-  background-color: #2196f3;
-}
-.footer-social-link-list .icon {
-  width: 20px;
-  height: 20px;
+  .item {
+    display: block;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #ffffff;
+
+    transition: $time-function;
+
+    &:hover,
+    &:focus {
+      background-color: accent-color;
+    }
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 .subscribe-container {
   display: flex;

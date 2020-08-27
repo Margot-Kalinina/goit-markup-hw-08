@@ -8,16 +8,22 @@
 .sorting-buttons-list {
   display: flex;
   justify-content: center;
+
+  .item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
-.sorting-buttons-list .item:not(:last-child) {
-  margin-right: 8px;
-}
-.sorting-button,
-.sorting-button:visited {
+.sorting-button {
   height: 38px;
   padding-left: 22px;
   padding-right: 22px;
   align-content: center;
+
+  outline: none;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
 
   font-family: $main-font;
   font-weight: 500;
@@ -27,17 +33,13 @@
   color: $title-light-theme-color;
 
   transition: $time-function;
-}
-.sorting-button:focus,
-.sorting-button:hover {
-  color: $text-dark-theme-color;
-  background-color: #2196f3;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 3px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-}
-.sorting-button {
-  background: #f5f4fa;
-  border-radius: 4px;
-  border: none;
+
+  &:focus,
+  &:hover {
+    color: $text-dark-theme-color;
+    background-color: #2196f3;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
 }

@@ -1,19 +1,21 @@
 @import "./utils/variables";
+
 @import "./base/base";
 @import "./layout/logo";
+@import "./components/buttons";
 
 @import "./layout/navigation-line";
 
 @import "./layout/hero-section";
-@import "./components/modal";
-@import "./layout/advantage";
-
 @import "./components/secondary-header";
+@import "./layout/advantage";
 @import "./layout/what-we-do";
 @import "./layout/our-team";
 @import "./layout/regular-customers";
+
+@import "./components/modal";
+
 @import "./layout/footer";
 
 @import "./layout/portfolio-sorting-buttons";
 @import "./layout/work-examples";
-@import "./components/buttons";
