@@ -208,6 +208,16 @@
   appearance: none;
 
   position: absolute;
+
+  &:checked ~ .rules-agree-label::before {
+    background-color: $accent-color;
+    background-image: url(../images/icon-check.svg);
+    background-size: cover;
+    fill: #ffffff;
+    border: none;
+
+    transition: $time-function;
+  }
 }
 .rules-agree-label {
   font-weight: 500;
@@ -226,16 +236,6 @@
 
     border: 2px solid #212121;
     border-radius: 4px;
-
-    transition: $time-function;
-  }
-
-  &:checked ~ .rules-agree-label::before {
-    background-color: $accent-color;
-    background-image: url(../images/icon-check.svg);
-    background-size: cover;
-    fill: #ffffff;
-    border: none;
 
     transition: $time-function;
   }
