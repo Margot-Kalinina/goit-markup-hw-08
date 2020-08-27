@@ -157,6 +157,9 @@
 
   &:focus ~ .icon-modal {
     fill: $accent-color;
+    transition: $time-function;
+  }
+  &:focus {
     border-color: $accent-color;
     transition: $time-function;
   }
@@ -193,11 +196,10 @@
     letter-spacing: 0.01em;
 
     color: $accent-color;
-
-    &:focus {
-      border-color: $accent-color;
-      transition: $time-function;
-    }
+  }
+  &:focus {
+    border-color: $accent-color;
+    transition: $time-function;
   }
 }
 .rules-agree-checkbox {
