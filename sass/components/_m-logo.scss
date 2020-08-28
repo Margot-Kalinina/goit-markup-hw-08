@@ -1,0 +1,59 @@
+// мобильные стилм
+@media screen and (max-width: 767px) {
+  .blue-web {
+    color: $accent-color;
+  }
+  .logo {
+    display: block;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    width: 141px;
+
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $main-logo-color-header;
+  }
+  .footer {
+    .logo {
+      color: $main-logo-color-footer;
+    }
+  }
+}
+//
+//
+//
+//
+//
+//
+//
+// десктоп стили
+@media screen and (min-width: 1200px) {
+  .blue-web {
+    color: $accent-color;
+  }
+  .logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 85px;
+
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $main-logo-color-header;
+  }
+  .footer {
+    .logo {
+      color: $main-logo-color-footer;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@media screen and (max-width: 767px) {
+  .regular-customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .regular-customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+
+    .item {
+      width: calc((100% - 30px) / 2);
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      &:nth-child(even) {
+        margin-right: 0px;
+      }
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .regular-customers-link {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    fill: #afb1b8;
+
+    transition: $time-function;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+      border-radius: 4px;
+      fill: $accent-color;
+    }
+  }
+}
+
+//
+//
+//
+//
+//
+//
+//
+// мобильные стили
+@media screen and (min-width: 1200px) {
+  .regular-customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .regular-customers-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    .item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .regular-customers-link {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    fill: #afb1b8;
+
+    transition: $time-function;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+      border-radius: 4px;
+      fill: $accent-color;
+    }
+  }
+}
