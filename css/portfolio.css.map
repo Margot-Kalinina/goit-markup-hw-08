@@ -4,13 +4,13 @@
     "sources": [
         "../sass/portfolio.scss",
         "../sass/utils/_variables.scss",
-        "../sass/base/_m-base.scss",
-        "../sass/components/_m-logo.scss",
-        "../sass/components/_m-buttons.scss",
-        "../sass/m-layout/_m-navigation-line.scss",
-        "../sass/m-layout/_m-portfolio-sorting-buttons.scss",
-        "../sass/m-layout/_m-work-examples.scss",
-        "../sass/m-layout/_m-footer.scss"
+        "../sass/base/_base.scss",
+        "../sass/components/_logo.scss",
+        "../sass/components/_buttons.scss",
+        "../sass/layout/_navigation-line.scss",
+        "../sass/layout/_portfolio-sorting-buttons.scss",
+        "../sass/layout/_work-examples.scss",
+        "../sass/layout/_footer.scss"
     ],
     "names": [],
     "file": "portfolio.css"

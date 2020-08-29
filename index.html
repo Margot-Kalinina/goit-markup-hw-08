@@ -247,10 +247,12 @@
               <li class="item">
                 <div class="what-we-do-description-container">
                   <img
-                    src="./images/what-we-do/laptop.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                    height="295"
+                    alt="Компьютер"
+                    src="./images/what-we-do/do-1@1x.jpg"
+                    srcset="
+                      ./images/what-we-do/do-1@1x.jpg 1x,
+                      ./images/what-we-do/do-1@2x.jpg 2x
+                    "
                   />
                   <p class="description">Десктопные приложения</p>
                 </div>
@@ -258,10 +260,12 @@
               <li class="item">
                 <div class="what-we-do-description-container">
                   <img
-                    src="./images/what-we-do/smartphone.jpg"
                     alt="Смартфон"
-                    width="370"
-                    height="295"
+                    src="./images/what-we-do/do-2@1x.jpg"
+                    srcset="
+                      ./images/what-we-do/do-2@1x.jpg 1x,
+                      ./images/what-we-do/do-2@2x.jpg 2x
+                    "
                   />
                   <p class="description">Мобильные приложения</p>
                 </div>
@@ -269,10 +273,12 @@
               <li class="item">
                 <div class="what-we-do-description-container">
                   <img
-                    src="./images/what-we-do/display.jpg"
                     alt="Монитор"
-                    width="370"
-                    height="295"
+                    src="./images/what-we-do/do-3@1x.jpg"
+                    srcset="
+                      ./images/what-we-do/do-3@1x.jpg 1x,
+                      ./images/what-we-do/do-3@2x.jpg 2x
+                    "
                   />
                   <p class="description">Дизайнерские решения</p>
                 </div>
@@ -286,12 +292,38 @@
             <h2>Наша команда</h2>
             <ul class="our-team-list">
               <li class="item">
-                <img
-                  src="./images/our-team/nicolaj.jpg"
-                  alt="Наш сотрудник"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/our-team/1team-450@1x.jpg 450w,
+                      ./images/our-team/1team-900@2x.jpg 900w
+                    "
+                    media="(max-width: 767px)"
+                    sizes="(max-width: 767px) 450px 90vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/our-team/1team-354@1x.jpg 374w,
+                      ./images/our-team/1team-708@2x.jpg 708w
+                    "
+                    media="(max-width: 1199px)"
+                    sizes="(man-width: 1199px) 374px 90vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/our-team/1team-270@1x.jpg 270w,
+                      ./images/our-team/1team-540@2x.jpg 540w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 270px, 90vw, 100vw"
+                  />
+
+                  <img
+                    src="./images/our-team/1team-354@1x.jpg"
+                    alt="Сотрудник"
+                  />
+                </picture>
+
                 <h3>Николай Кучеренко</h3>
                 <p lang="en">Product Designer</p>
                 <ul class="social-link-list">
@@ -348,12 +380,37 @@
                 </ul>
               </li>
               <li class="item">
-                <img
-                  src="./images/our-team/olha.jpg"
-                  alt="Наш сотрудник"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/our-team/2team-450@1x.jpg 450w,
+                      ./images/our-team/2team-900@2x.jpg 900w
+                    "
+                    media="(max-width: 767px)"
+                    sizes="(max-width: 767px) 450px 90vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/our-team/2team-354@1x.jpg 374w,
+                      ./images/our-team/2team-708@2x.jpg 708w
+                    "
+                    media="(max-width: 1199px)"
+                    sizes="(man-width: 1199px) 374px 90vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/our-team/2team-270@1x.jpg 270w,
+                      ./images/our-team/2team-540@2x.jpg 540w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 270px, 90vw, 100vw"
+                  />
+
+                  <img
+                    src="./images/our-team/1team-354@1x.jpg"
+                    alt="Сотрудник"
+                  />
+                </picture>
                 <h3>Ольга Иванова</h3>
                 <p lang="en">Frontend Developer</p>
                 <ul class="social-link-list">
@@ -410,12 +467,37 @@
                 </ul>
               </li>
               <li class="item">
-                <img
-                  src="./images/our-team/andrej.jpg"
-                  alt="Наш сотрудник"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/our-team/3team-450@1x.jpg 450w,
+                      ./images/our-team/3team-900@2x.jpg 900w
+                    "
+                    media="(max-width: 767px)"
+                    sizes="(max-width: 767px) 450px 90vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/our-team/3team-354@1x.jpg 374w,
+                      ./images/our-team/3team-708@2x.jpg 708w
+                    "
+                    media="(max-width: 1199px)"
+                    sizes="(man-width: 1199px) 374px 90vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/our-team/3team-270@1x.jpg 270w,
+                      ./images/our-team/3team-540@2x.jpg 540w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 270px, 90vw, 100vw"
+                  />
+
+                  <img
+                    src="./images/our-team/1team-354@1x.jpg"
+                    alt="Сотрудник"
+                  />
+                </picture>
                 <h3>Андрей Шевченко</h3>
                 <p lang="en">Marketing</p>
                 <ul class="social-link-list">
@@ -472,12 +554,37 @@
                 </ul>
               </li>
               <li class="item">
-                <img
-                  src="./images/our-team/ivan.jpg"
-                  alt="Наш сотрудник"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/our-team/4team-450@1x.jpg 450w,
+                      ./images/our-team/4team-900@2x.jpg 900w
+                    "
+                    media="(max-width: 767px)"
+                    sizes="(max-width: 767px) 450px 90vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/our-team/4team-354@1x.jpg 374w,
+                      ./images/our-team/4team-708@2x.jpg 708w
+                    "
+                    media="(max-width: 1199px)"
+                    sizes="(man-width: 1199px) 374px 90vw, 100vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/our-team/4team-270@1x.jpg 270w,
+                      ./images/our-team/4team-540@2x.jpg 540w
+                    "
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 270px, 90vw, 100vw"
+                  />
+
+                  <img
+                    src="./images/our-team/1team-354@1x.jpg"
+                    alt="Сотрудник"
+                  />
+                </picture>
                 <h3>Иван Николаев</h3>
                 <p lang="en">UI Designer</p>
                 <ul class="social-link-list">
