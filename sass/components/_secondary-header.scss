@@ -1,11 +1,36 @@
-.about-our-company h2 {
-  margin: 0;
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .about-our-company h2 {
+    margin: 0;
+    text-align: center;
 
-  font-family: $main-font;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: $title-light-theme-color;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    color: $title-light-theme-color;
+  }
+}
+
+//
+//
+//
+//
+//
+//
+//
+// стили десктопа
+@media screen and (min-width: 1200px) {
+  .about-our-company h2 {
+    margin: 0;
+    padding: 0%;
+    text-align: center;
+
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $title-light-theme-color;
+  }
 }

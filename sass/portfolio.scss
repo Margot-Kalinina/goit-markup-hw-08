@@ -1,11 +1,12 @@
-@import "./utils/variables";
+@import './utils/variables';
 
-@import "./base/base";
-@import "./components/logo";
-@import "./components/buttons";
-@import "./layout/navigation-line";
+@import './base/base';
 
-@import "./layout/portfolio-sorting-buttons";
-@import "./layout/work-examples";
+@import './components/logo';
+@import './components/buttons';
 
-@import "./layout/footer";
+@import './layout/navigation-line';
+
+@import './layout/portfolio-sorting-buttons';
+@import './m-layout/work-examples';
+@import './layout/footer';

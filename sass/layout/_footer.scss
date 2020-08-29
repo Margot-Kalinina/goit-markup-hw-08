@@ -4,7 +4,6 @@
   margin-right: auto;
 
   p {
-    margin: 0;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -13,15 +12,7 @@
     color: $text-dark-theme-color;
   }
 }
-.footer-navigation {
-  display: flex;
-  justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .footer-contact-data-container {
-  margin-right: 69px;
-
   .logo {
     margin: 0;
     padding: 0;
@@ -32,30 +23,17 @@
     display: inline;
     padding: 0;
   }
-
-  .item:not(:first-child) {
-    margin-top: 9px;
-  }
 }
 .google-maps-position-link {
   display: block;
-  margin-top: 20px;
-  width: 231px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $text-dark-theme-color;
 }
-.join-us {
-  padding-top: 12px;
-  margin-right: 94px;
-  align-content: center;
-}
 .footer-social-link-list {
   display: flex;
-  margin-top: 20px;
 
   .item {
     display: block;
@@ -88,19 +66,9 @@
     height: 20px;
   }
 }
-.subscribe-container {
-  display: flex;
-  align-content: center;
-}
-.subscribe {
-  padding-top: 12px;
-}
 .subscribe-form {
   display: block;
-  width: 358px;
   height: 50px;
-  margin-right: 12px;
-  margin-top: 20px;
   padding-left: 16px;
 
   background-color: transparent;
@@ -124,8 +92,6 @@
   align-items: center;
   text-align: center;
 
-  margin-top: 20px;
-
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
@@ -140,4 +106,195 @@
   width: 24px;
   height: 24px;
   margin-left: 10px;
+}
+//
+//
+//
+//
+//стили таблетки
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-navigation {
+    height: 464px;
+    padding-top: 65px;
+    padding-bottom: 60px;
+    padding-left: 58px;
+    padding-right: 74px;
+  }
+  .tablet-flex {
+    width: 100%;
+    margin-bottom: 60px;
+    justify-content: space-between;
+  }
+  .contact-data {
+    margin-top: 20px;
+  }
+  .contact-data-list {
+    text-align: center;
+
+    .item:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+  .subscribe {
+    p {
+      margin: 0;
+    }
+    align-items: center;
+  }
+  .subscribe-form {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-tab {
+    padding-right: 63px;
+    padding-left: 90px;
+  }
+}
+//
+//
+//
+//
+//
+//
+// мобильные стили
+@media screen and (max-width: 767px) {
+  .footer {
+    .contact-data {
+      margin: 0;
+      margin-top: 30px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+  .footer-navigation {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: center;
+  }
+  .footer-contact-data-container {
+    align-items: center;
+
+    .logo {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  .contact-data-list {
+    .item:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+  .google-maps-position-link {
+    width: 100%;
+  }
+  .join-us {
+    margin-top: 60px;
+    align-content: center;
+  }
+  .footer-social-link-list {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .subscribe {
+    margin-top: 60px;
+  }
+  .subscribe-form {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .button-subscribe {
+    margin-top: 20px;
+  }
+}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+@media screen and (min-width: 768px) {
+  .tablet-flex {
+    display: flex;
+  }
+}
+//
+// стили десктопа
+@media screen and (min-width: 1200px) {
+  .footer {
+    background-color: #2f303a;
+    margin-left: auto;
+    margin-right: auto;
+
+    p {
+      margin: 0;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $text-dark-theme-color;
+    }
+  }
+  .footer-navigation {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer-contact-data-container {
+    margin-right: 69px;
+    text-align: left;
+
+    .logo {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .contact-data-list {
+    .contact-link {
+      display: inline;
+      padding: 0;
+    }
+
+    .item:not(:first-child) {
+      margin-top: 9px;
+    }
+  }
+  .google-maps-position-link {
+    margin-top: 20px;
+    width: 231px;
+  }
+  .join-us {
+    padding-top: 12px;
+    margin-right: 94px;
+    align-content: center;
+    text-align: left;
+  }
+  .footer-social-link-list {
+    margin-top: 20px;
+  }
+  .subscribe-container {
+    display: flex;
+    align-content: center;
+  }
+  .subscribe {
+    padding-top: 12px;
+    text-align: left;
+  }
+  .subscribe-form {
+    width: 358px;
+    margin-right: 12px;
+    margin-top: 20px;
+  }
+  .button-subscribe {
+    margin-top: 20px;
+  }
 }

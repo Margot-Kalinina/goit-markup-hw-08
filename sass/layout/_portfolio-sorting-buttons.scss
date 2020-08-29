@@ -1,13 +1,10 @@
 .sorting-buttons-container {
-  width: 1200px;
   margin: 0 auto;
-  padding-top: 91px;
   padding-left: 15px;
   padding-right: 15px;
 }
 .sorting-buttons-list {
   display: flex;
-  justify-content: center;
 
   .item:not(:last-child) {
     margin-right: 8px;
@@ -41,5 +38,51 @@
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 3px 1px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
+  }
+}
+
+//
+//
+//
+// стили мобильного
+@media screen and (max-width: 767px) {
+  .sorting-buttons-list {
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+  .sorting-button {
+    margin-bottom: 15px;
+
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+  }
+  .sorting-buttons-container {
+    max-width: 480px;
+    padding-top: 60px;
+  }
+}
+//
+//
+//
+// стили от таблетки
+@media screen and (min-width: 767px) {
+  .sorting-buttons-list {
+    justify-content: center;
+  }
+  .sorting-buttons-container {
+    width: 768px;
+    padding-top: 60px;
+  }
+}
+//
+//
+//
+//
+// сьтли десктопа
+@media screen and (min-width: 1200px) {
+  .sorting-buttons-container {
+    width: 1200px;
+    padding-top: 91px;
   }
 }
