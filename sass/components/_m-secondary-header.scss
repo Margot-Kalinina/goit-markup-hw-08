@@ -1,4 +1,4 @@
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 1199px) {
   .about-our-company h2 {
     margin: 0;
     text-align: center;
@@ -23,6 +23,7 @@
 @media screen and (min-width: 1200px) {
   .about-our-company h2 {
     margin: 0;
+    padding: 0%;
     text-align: center;
 
     font-family: $main-font;

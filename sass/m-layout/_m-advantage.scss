@@ -1,57 +1,63 @@
+.hidden-heder {
+  position: absolute;
+  visibility: hidden;
+}
+.advantage-list {
+  .icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  h3 {
+    margin: 0;
+    margin-top: 30px;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $title-light-theme-color;
+  }
+
+  p {
+    margin: 0;
+    margin-top: 10px;
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $text-light-theme-color;
+  }
+}
+.icon-bacground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+//
+//
+//
+//
 // мобильные стили
 @media screen and (max-width: 767px) {
-  .hidden-heder {
-    position: absolute;
-    visibility: hidden;
-  }
   .advantage-list {
     .item {
       width: 100%;
       text-align: center;
     }
-
-    .icon {
-      width: 70px;
-      height: 70px;
-    }
-
-    h3 {
-      margin: 0;
-      margin-top: 30px;
-
-      font-family: $main-font;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: $title-light-theme-color;
-    }
-
-    p {
-      margin: 0;
-      margin-top: 10px;
-      font-family: $main-font;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: 0.03em;
-      color: $text-light-theme-color;
-    }
-
     .item:not(:last-child) {
       margin-bottom: 30px;
     }
   }
   .icon-bacground {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
     width: 100%;
-    height: 120px;
-    background-color: #f5f4fa;
   }
 
   .section {
@@ -63,17 +69,38 @@
 
 //
 //
-//
+//стили таблет
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      flex-basis: calc((100% - 30px) / 2);
+      margin-right: 30px;
+      margin-bottom: 30px;
+      text-align: left;
+
+      &:nth-child(even) {
+        margin-right: 0px;
+      }
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .section {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 //
 //
 //
 //
 // десктопная версия
 @media screen and (min-width: 1200px) {
-  .hidden-heder {
-    position: absolute;
-    visibility: hidden;
-  }
   .advantage {
     padding-top: 93px;
     padding-bottom: 47px;
@@ -84,49 +111,15 @@
 
     .item {
       width: 270px;
+      text-align: left;
     }
 
     .icon {
       width: 70px;
       height: 70px;
     }
-
-    h3 {
-      margin: 0;
-      margin-top: 30px;
-
-      font-family: $main-font;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: $title-light-theme-color;
-    }
-
-    p {
-      margin: 0;
-      margin-top: 10px;
-      font-family: $main-font;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: 0.03em;
-      color: $text-light-theme-color;
-    }
-
     .item:not(:last-child) {
       margin-right: 30px;
     }
-  }
-  .icon-bacground {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-    background-color: #f5f4fa;
   }
 }

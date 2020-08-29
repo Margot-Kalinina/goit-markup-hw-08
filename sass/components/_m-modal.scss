@@ -43,6 +43,8 @@
   background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 
   transition: $time-function;
+
+  overflow-y: scroll;
 }
 .is-hidden {
   opacity: 0;
@@ -55,12 +57,6 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-
-  width: 528px;
-  height: 581px;
-  margin-top: 60px;
-  padding: 40px;
-
   background-color: $bacground-light;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -220,10 +216,6 @@
   }
 }
 .rules-agree-label {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: $text-light-theme-color;
 
   &::before {
@@ -257,4 +249,61 @@
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+}
+//
+//
+//
+//стили мобильного
+@media screen and (max-width: 456px) {
+  .modal {
+    max-width: 380px;
+    height: 609px;
+    margin-top: 60px;
+    padding: 20px;
+  }
+}
+//
+//
+//
+//
+//
+// стили таблетки
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    margin-top: 208px;
+    padding: 40px;
+  }
+  .rules-agree-label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+//
+//
+//
+//
+//
+//
+//
+//
+// стили для десктопа
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    margin-top: 222px;
+    padding: 40px;
+  }
+  .rules-agree-label {
+    margin-left: 52px;
+  }
+  .rules-agree-label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }

@@ -1,12 +1,99 @@
+// базовые стили
+.navigation-list {
+  color: $navigation-list-color;
+}
+.navigation-link {
+  transition: $time-function;
+
+  &:visited {
+    color: $navigation-list-color;
+  }
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+.active-blue-link {
+  width: min-content;
+  color: $accent-color;
+
+  :visited {
+    color: $accent-color;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+}
+
+.contact-data {
+  .contact-link {
+    color: $contact-link-color;
+    fill: $contact-link-color;
+
+    transition: $time-function;
+
+    &:visited {
+      color: $contact-link-color;
+      fill: $contact-link-color;
+    }
+    &:focus,
+    &:hover {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+}
+
+.icon-envelope {
+  margin-right: 10px;
+  width: 16px;
+  height: 11px;
+}
+.icon-smartphone {
+  margin-right: 10px;
+  width: 10px;
+  height: 15px;
+}
+.main-navigation {
+  border-bottom: 1px solid #ececec;
+}
+//
+//
+//
+//
+//
+//
+//
+.menu-button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+//
+//
+//
+//
 // мобильные стили
 @media screen and (max-width: 767px) {
   .main-navigation {
-    width: 100%;
-    border-bottom: 1px solid #ececec;
     position: relative;
+    width: 100%;
   }
   .navigation {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
@@ -41,11 +128,6 @@
     }
   }
   .menu-button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    height: 40px;
-
     outline: none;
 
     display: block;
@@ -81,7 +163,6 @@
     font-size: 18px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    color: $navigation-list-color;
 
     .item:not(:last-child) {
       margin-bottom: 20px;
@@ -93,17 +174,6 @@
 
     padding-top: 10px;
     padding-bottom: 10px;
-
-    transition: $time-function;
-
-    &:visited {
-      color: $navigation-list-color;
-    }
-
-    &:focus,
-    &:hover {
-      color: $accent-color;
-    }
   }
   .active-blue-link {
     position: relative;
@@ -113,27 +183,6 @@
 
     margin-left: auto;
     margin-right: auto;
-
-    width: min-content;
-
-    color: $accent-color;
-
-    :visited {
-      color: $accent-color;
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      height: 4px;
-      background-color: $accent-color;
-      border-radius: 2px;
-    }
   }
 
   .contact-data {
@@ -152,21 +201,6 @@
 
       padding-top: 5px;
       padding-bottom: 5px;
-
-      color: $contact-link-color;
-      fill: $contact-link-color;
-
-      transition: $time-function;
-
-      &:visited {
-        color: $contact-link-color;
-        fill: $contact-link-color;
-      }
-      &:focus,
-      &:hover {
-        color: $accent-color;
-        fill: $accent-color;
-      }
     }
 
     .contact-link + .contact-link {
@@ -188,23 +222,14 @@
 //
 //
 //
-//
-//
-//
-//
-// стили декстопа
-@media screen and (min-width: 1200px) {
-  .menu-button {
-    display: none;
-  }
+// стили начиная с таблетки
+@media screen and (min-width: 768px) {
   .navigation-list {
     display: flex;
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
     letter-spacing: 0.02em;
-    color: $navigation-list-color;
 
     .item:not(:last-child) {
       margin-right: 50px;
@@ -214,91 +239,22 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-
-    transition: $time-function;
-
-    &:visited {
-      color: $navigation-list-color;
-    }
-
-    &:focus,
-    &:hover {
-      color: $accent-color;
-    }
   }
   .active-blue-link {
     position: relative;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-
-    color: $accent-color;
-
-    :visited {
-      color: $accent-color;
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      height: 4px;
-      background-color: $accent-color;
-      border-radius: 2px;
-    }
   }
 
   .contact-data {
-    display: flex;
-    margin-left: auto;
-
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
-    .contact-link {
-      display: block;
-      display: flex;
-      align-items: center;
-      padding-top: 32px;
-      padding-bottom: 32px;
-      color: $contact-link-color;
-      fill: $contact-link-color;
-
-      transition: $time-function;
-
-      &:visited {
-        color: $contact-link-color;
-        fill: $contact-link-color;
-      }
-      &:focus,
-      &:hover {
-        color: $accent-color;
-        fill: $accent-color;
-      }
-    }
-
-    .contact-link + .contact-link {
-      margin-left: 30px;
-    }
   }
 
-  .icon-envelope {
-    margin-right: 10px;
-    width: 16px;
-    height: 11px;
-  }
-  .icon-smartphone {
-    margin-right: 10px;
-    width: 10px;
-    height: 15px;
-  }
   .navigation {
     display: flex;
     justify-content: center;
@@ -306,12 +262,66 @@
 
     margin-right: auto;
     margin-left: auto;
-    max-width: 1200px;
   }
   .mobile-menu {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+//
+//
+//
+//  стили для таблетки
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-data {
+    margin-left: auto;
+    text-align: left;
+    .contact-link {
+      display: block;
+    }
+
+    .contact-link + .contact-link {
+      margin-top: 10px;
+    }
+  }
+
+  .navigation {
+    width: 780px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .mobile-menu {
+    width: 528px;
+  }
+}
+//
+//
+//
+//
+// стили декстопа
+@media screen and (min-width: 1200px) {
+  .contact-data {
+    display: flex;
+    margin-left: auto;
+
+    .contact-link {
+      display: block;
+      display: flex;
+      align-items: center;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    .contact-link + .contact-link {
+      margin-left: 30px;
+    }
+  }
+
+  .navigation {
+    max-width: 1200px;
+  }
+  .mobile-menu {
     width: 932px;
   }
 }
