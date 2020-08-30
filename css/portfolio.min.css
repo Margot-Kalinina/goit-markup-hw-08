@@ -641,6 +641,12 @@ img {
   .work-examples-list .item:last-child {
     margin-bottom: 0px;
   }
+  .work-examples-description {
+    padding-top: 49px;
+    padding-right: 24px;
+    padding-bottom: 49px;
+    padding-left: 24px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .work-examples-list {
