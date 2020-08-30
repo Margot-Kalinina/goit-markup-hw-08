@@ -475,19 +475,19 @@ img {
         from(rgba(47, 48, 58, 0.8)),
         to(rgba(47, 48, 58, 0.8))
       ),
-      url(../../images/header-mob@1x.jpg);
+      url(../images/header-mob@1x.jpg);
     background-image: -o-linear-gradient(
         left,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/header-mob@1x.jpg);
+      url(../images/header-mob@1x.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/header-mob@1x.jpg);
+      url(../images/header-mob@1x.jpg);
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
@@ -503,19 +503,19 @@ img {
         from(rgba(47, 48, 58, 0.8)),
         to(rgba(47, 48, 58, 0.8))
       ),
-      url(../../images/header-mob@2x.jpg);
+      url(../images/header-mob@2x.jpg);
     background-image: -o-linear-gradient(
         left,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/header-mob@2x.jpg);
+      url(../images/header-mob@2x.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/header-mob@2x.jpg);
+      url(../images/header-mob@2x.jpg);
   }
 }
 @media screen and (max-width: 767px) {
@@ -554,19 +554,19 @@ img {
         from(rgba(47, 48, 58, 0.8)),
         to(rgba(47, 48, 58, 0.8))
       ),
-      url(../../images/header-tab@1x.jpg);
+      url(../images/header-tab@1x.jpg);
     background-image: -o-linear-gradient(
         left,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/header-tab@1x.jpg);
+      url(../images/header-tab@1x.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/header-tab@1x.jpg);
+      url(../images/header-tab@1x.jpg);
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
@@ -582,19 +582,19 @@ img {
         from(rgba(47, 48, 58, 0.8)),
         to(rgba(47, 48, 58, 0.8))
       ),
-      url(../../images/header-tab@2x.jpg);
+      url(../images/header-tab@2x.jpg);
     background-image: -o-linear-gradient(
         left,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/header-tab@2x.jpg);
+      url(../images/header-tab@2x.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/header-tab@2x.jpg);
+      url(../images/header-tab@2x.jpg);
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -617,19 +617,19 @@ img {
         from(rgba(47, 48, 58, 0.8)),
         to(rgba(47, 48, 58, 0.8))
       ),
-      url(../../images/header-des@1x.jpg);
+      url(../images/header-des@1x.jpg);
     background-image: -o-linear-gradient(
         left,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/header-des@1x.jpg);
+      url(../images/header-des@1x.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/header-des@1x.jpg);
+      url(../images/header-des@1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #2e2c2c;
@@ -648,19 +648,19 @@ img {
         from(rgba(47, 48, 58, 0.8)),
         to(rgba(47, 48, 58, 0.8))
       ),
-      url(../../images/header-des@2x.jpg);
+      url(../images/header-des@1x.jpg);
     background-image: -o-linear-gradient(
         left,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/header-des@2x.jpg);
+      url(../images/header-des@1x.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url(../../images/header-des@2x.jpg);
+      url(../images/header-des@1x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
